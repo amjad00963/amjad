@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #50616f;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+
+
+.top-bar {
+    background:#f5f7f8;
+    height: 35px;
+    font-size: 11px;
+    color: #7b8993;
+}
+
+.top-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-content span {
+    margin-right: 18px;
+}
+
+.top-content i {
+    margin-right: 5px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social a {
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #7b8993;
+}
+
+.header {
+    height: 78px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #7b8993;
+    margin-right: auto;
+}
+
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navigation a {
+    font-size: 11px;
+    font-weight: bold;
+    color: #4d5e6c;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #7b8993;
+}
+
+
+.search-btn {
+    margin-left: 30px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 20px;
+}
+.hero {
+    min-height: 485px;
+    position: relative;
+
+    background-image:
+        url(img/logo.jpg);
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+ 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #dce6ed;
+    font-size: 14px;
+    max-width: 700px;
+    margin: auto auto 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #997747;
+    color: white;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: red;
+    transform: translateY(-2px);
+}
+
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    text-align: center;
+    color:black;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    font-size: 13px;
+    color: black;
+}
+
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+}
+
+.feature-icon {
+    min-width: 45px;
+    color: black;
+    font-size: 36px;
+}
+
+.feature h3 {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.feature p {
+    font-size: 12px;
+    color: black;
+    line-height: 2;
+}
+
+
+.portfolio {
+    background: #f3f5f7;
+}
+
+.portfolio-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.portfolio-card {
+    background: white;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px black;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio-info h3 {
+    color: #50616f;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.portfolio-info span {
+    font-size: 10px;
+    color: #7b8993;
+}
+
+.portfolio-small {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.portfolio-small img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+
+.cta {
+    text-align: center;
+    background: white;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 13px;
+    color: #8997a1;
+}
+
+.footer {
+    background: #111111;
+    color: #aab8c2;
+}
+
+.footer-grid {
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.3fr 1.2fr;
+    gap: 35px;
+}
+
+.footer-column h4 {
+    color: white;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.more {
+    color: white;
+    font-size: 11px;
+}
+
+.footer-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.footer-gallery img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+}
+
+.footer-column i {
+    width: 18px;
+    color: #c5d0d7;
+}
+
+.subscribe {
+    display: flex;
+    background: #111000;
+    padding: 4px;
+}
+
+.subscribe input {
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 8px;
+    font-size: 10px;
+}
+
+.subscribe input::placeholder {
+    color: #aab8c2;
+}
+
+.subscribe button {
+    border: 0;
+    background: #997747;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.footer-bottom {
+    background:black;
+    padding: 20px 0;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-content p {
+    font-size: 10px;
+    color: #8293a0;
+}
+
+.bottom-content div {
+    display: flex;
+    gap: 15px;
+}
+
+.bottom-content a {
+    font-size: 10px;
+    color: #8293a0;
+}
+
+.bottom-content a:hover {
+    color: white;
+}
